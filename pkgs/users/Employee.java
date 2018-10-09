@@ -3,7 +3,6 @@ package pkgs.users;
 
 /**
  * Employee is a subclass of User
- * @author Junye Wen
  */
 public class Employee extends User {
     private int socialSecurityNumber;
