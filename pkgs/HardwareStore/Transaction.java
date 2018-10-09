@@ -1,17 +1,11 @@
-/*
- * Hardware Store Management Software v0.1
- * Developed for CS3354: Object Oriented Design and Programming.
- * Copyright: Junye Wen (j_w236@txstate.edu)
- */
-
-package HardwareStore.HardwareStore;
+package pkgs.HardwareStore;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * This class represents a transaction in the Hardware Store Software.
- * @author Junye Wen
+ * @author Jeffrey Vallejo
  */
 public class Transaction implements Serializable {
     private final String itemID;

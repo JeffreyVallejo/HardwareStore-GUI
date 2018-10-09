@@ -4,7 +4,7 @@
  * Copyright: Junye Wen (j_w236@txstate.edu)
  */
 
-package HardwareStore.users;
+package pkgs.users;
 
 /**
  * Employee is a subclass of User

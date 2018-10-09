@@ -1,13 +1,8 @@
 
 
-package HardwareStore.items;
+package pkgs.items;
 
-
-/**
- *
- * @author Junye Wen
- */
-public class SmallHardwareItems extends HardwareStore.items.Item {
+public class SmallHardwareItems extends pkgs.items.Item {
     protected final String category;
 
     /**

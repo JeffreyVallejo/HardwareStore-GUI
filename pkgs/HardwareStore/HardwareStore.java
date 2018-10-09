@@ -1,16 +1,11 @@
-/*
- * Hardware Store Management Software v0.1
- * Developed for CS3354: Object Oriented Design and Programming.
- * Copyright: Junye Wen (j_w236@txstate.edu)
- */
-package HardwareStore.HardwareStore;
+package pkgs.HardwareStore;
 
-import HardwareStore.items.Appliances;
-import HardwareStore.items.Item;
-import HardwareStore.items.SmallHardwareItems;
-import HardwareStore.users.Customer;
-import HardwareStore.users.Employee;
-import HardwareStore.users.User;
+import pkgs.items.Appliances;
+import pkgs.items.Item;
+import pkgs.items.SmallHardwareItems;
+import pkgs.users.Customer;
+import pkgs.users.Employee;
+import pkgs.users.User;
 
 import java.io.*;
 import java.util.*;
@@ -21,11 +16,11 @@ import java.util.*;
  * write item objects in readable text form. It contains an
  * <CODE>ArrayList</CODE> called <CODE>itemList</CODE> to store the database in
  * a runtime friendly data structure. The <CODE>itemList</CODE> is written to
- * "database.txt" at the end of the <CODE>HardwareStore</CODE> object's life by
+ * "database.txt" at the end of the <CODE>pkgs</CODE> object's life by
  * calling <CODE>writeDatabase()</CODE>. This class also provides methods for
  * adding, removing, and searching for items in the list.
  *
- * @author Junye Wen
+ * @author Jeffrey Vallejo
  */
 public class HardwareStore {
 

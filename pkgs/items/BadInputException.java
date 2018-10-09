@@ -1,4 +1,4 @@
-package HardwareStore.items;
+package pkgs.items;
 
 /**
  * Custom Exception type, used to report bad input from user.

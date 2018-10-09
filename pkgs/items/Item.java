@@ -3,7 +3,7 @@
  * Developed for CS3354: Object Oriented Design and Programming.
  * Copyright: Junye Wen (j_w236@txstate.edu)
  */
-package HardwareStore.items;
+package pkgs.items;
 
 /**
  * This class is a very simple representation of a hardware item. For parameters
@@ -13,7 +13,7 @@ package HardwareStore.items;
  * An item object can also call the override methods
  * <CODE>equals()</CODE>
  *
- * @author Junye Wen
+ * @author Jeffrey Vallejo
  */
 
 import java.io.Serializable;

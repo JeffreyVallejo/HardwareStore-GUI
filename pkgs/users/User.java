@@ -1,17 +1,8 @@
-/*
- * Hardware Store Management Software v0.1
- * Developed for CS3354: Object Oriented Design and Programming.
- * Copyright: Junye Wen (j_w236@txstate.edu)
- */
 
-package HardwareStore.users;
+package pkgs.users;
 
 import java.io.Serializable;
 
-/**
- * User is a superclass for all specific types of actors in the system
- * @author Junye Wen
- */
 public abstract class User implements Serializable {
 
     protected final int id;

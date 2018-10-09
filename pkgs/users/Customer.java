@@ -1,16 +1,6 @@
-/*
- * Hardware Store Management Software v0.1
- * Developed for CS3354: Object Oriented Design and Programming.
- * Copyright: Junye Wen (j_w236@txstate.edu)
- */
 
-package HardwareStore.users;
+package pkgs.users;
 
-
-/**
- *
- * @author Junye Wen
- */
 public class Customer extends User {
     private String phoneNumber;
     private String address;

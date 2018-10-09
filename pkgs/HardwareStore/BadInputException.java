@@ -1,4 +1,4 @@
-package HardwareStore.HardwareStore;
+package pkgs.HardwareStore;
 
 /**
  * Custom Exception type, used to report bad input from user.

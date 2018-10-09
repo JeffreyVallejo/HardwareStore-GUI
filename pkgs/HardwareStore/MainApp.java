@@ -1,20 +1,13 @@
-package HardwareStore.HardwareStore;
+package pkgs.HardwareStore;
 
-import HardwareStore.items.Item;
-import HardwareStore.users.User;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.awt.event.WindowEvent;
-import java.util.*;
 import java.awt.*;
 import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.plaf.TabbedPaneUI;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
@@ -24,7 +17,6 @@ import java.util.logging.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -37,7 +29,7 @@ public class MainApp extends JPanel {
     
     private boolean DEBUG = false;
     
-    // create a new object of type HardwareStore
+    // create a new object of type pkgs
     private final HardwareStore hardwareStore;
     private static final Scanner CONSOLE_INPUT = new Scanner(System.in);
     
@@ -45,7 +37,7 @@ public class MainApp extends JPanel {
     private JFrame frame;
     public static JTextArea textArea = new JTextArea(200, 100); //this will hold the output
     private final static String newline = "\n";
-    private static final Logger logger = Logger.getLogger("HardwareStore.MainApp");
+    private static final Logger logger = Logger.getLogger("pkgs.MainApp");
     private static final FileHandler fh = initFh();
     //public JTextField textField;
     private static int userIdCounter;
@@ -53,7 +45,7 @@ public class MainApp extends JPanel {
     private static FileHandler initFh() {
         FileHandler fh = null;
         try {
-            fh = new FileHandler("HardwareStore.log");
+            fh = new FileHandler("pkgs.log");
             fh.setFormatter(new SimpleFormatter());
             logger.addHandler(fh);
         } catch (IOException ex) {
@@ -70,9 +62,9 @@ public class MainApp extends JPanel {
     public MainApp() throws IOException{
         //super(new BorderLayout());
         hardwareStore = new HardwareStore();
-        //hardwareStore = HardwareStore.readDatabase();
+        //hardwareStore = pkgs.readDatabase();
         //this.scanner = new Scanner(System.in);
-        frame = new JFrame("HardwareStore Interface");
+        frame = new JFrame("pkgs Interface");
         //outermost layout "mainBoarder"
         JComponent mainPanel = new JPanel(new BorderLayout());
         
@@ -288,7 +280,7 @@ public class MainApp extends JPanel {
         JScrollPane messenger = new JScrollPane(textArea);
         //textArea.setLineWrap(true);
         
-        textArea.append("Welcome to the HardwareStore Graphical user interface.\n");
+        textArea.append("Welcome to the pkgs Graphical user interface.\n");
         textArea.append("I will give you a quick guide through the buttons on this window\n");
         textArea.append("In the update panel you can update the quantity of an item by clicking \nthe item in the table,");
         textArea.append("enter a quantity, then click add or subtract to modify the data\n");
@@ -361,7 +353,7 @@ public class MainApp extends JPanel {
                     int currentQty = Integer.parseInt(invTable.getValueAt(selectedRow, 2).toString());
                     int newQty = 0;
                     if (currentQty >= updateQty){
-                        //HardwareStore.removeQuantity()
+                        //pkgs.removeQuantity()
                         newQty = currentQty - updateQty;
                         invTable.setValueAt(newQty, selectedRow, 2);
                         logger.info("subtracted quantity from item");
@@ -648,7 +640,7 @@ public class MainApp extends JPanel {
         JComponent inFieldusr = new JPanel();
         inFieldusr.setLayout(new BoxLayout(inFieldusr, BoxLayout.PAGE_AXIS));
 
-        //text field: ID (per HardwareStore, not Required, iterator used
+        //text field: ID (per pkgs, not Required, iterator used
         JComponent idPanelUsr = new JPanel();
         JTextField textIDusr = new JTextField(20);
         JScrollPane paneIDusr = new JScrollPane(textIDusr);
