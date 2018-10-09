@@ -1,8 +1,3 @@
-/*
- * Hardware Store Management Software v0.1
- * Developed for CS3354: Object Oriented Design and Programming.
- * Copyright: Junye Wen (j_w236@txstate.edu)
- */
 
 package pkgs.users;
 
